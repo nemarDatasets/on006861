@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Targeted Neuromodulation of the Left Dorsolateral Prefrontal Cortex Alleviates Altered Affective Response Evaluation in Lonely Individuals\n",
+  "description": "This dataset comprises EEG recordings and behavioral data from 120 right-handed adults who completed an emotion processing and regulation task during two counterbalanced sessions of transcranial direct current stimulation (tDCS)—one sham and one active. Participants viewed static images (social and non-social content) under different regulation instructions (watch-neutral, watch-negative, reappraise-negative) while 32-channel EEG was recorded at 1000 Hz using a 64-channel QuickCap with 32 active electrodes. The study investigates how targeted neuromodulation of the dorsolateral prefrontal cortex modulates affective response evaluation, with particular relevance to understanding emotion regulation mechanisms in lonely individuals. This is a NEMAR-processed version of the OpenNeuro dataset (ds006861).",
+  "methods_description": "EEG was acquired using a 64-channel QuickCap with 32 active electrodes sampled at 1000 Hz via a Neuroscan SynampsRT amplifier. tDCS was delivered using a Starstim 8 system with either left or right dlPFC montages (anode at F3 or F4, return electrodes at FP1/FP2, FZ, FC1/FC2, FC5/FC6). Active stimulation consisted of 2 mA for 20 minutes with 30-second ramp-up; sham stimulation included only ramp-up periods. Participants completed 120 trials per session in a 2×3 factorial design, viewing images for 5 seconds and rating arousal and valence on 9-point scales. EEG preprocessing included 0.1–30 Hz band-pass filtering, downsampling to 250 Hz, average mastoid re-referencing, ICA decomposition with automatic IC rejection (ADJUST and SASICA), and artifact rejection using absolute amplitude and FASTER criteria.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -9,52 +11,6 @@
     "Marta Chrustowicz": {},
     "Łukasz Okruszek": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds006861.v1.0.2",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on006861",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataset/on006861",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.18112/openneuro.ds006861",
-      "identifier_type": "DOI",
-      "relation_type": "IsVersionOf"
-    }
-  ],
-  "funding_references": [
-    {
-      "funder_name": "National Science Centre, Poland",
-      "award_number": "2019/35/B/HS6/00517"
-    }
-  ],
-  "modalities": [
-    "eeg"
-  ],
-  "resource_type_specific": "EEG Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".csv",
-    ".erp",
-    ".json",
-    ".m",
-    ".md",
-    ".set",
-    ".tsv"
-  ],
-  "description": "This dataset comprises EEG recordings and behavioral data from 120 neurologically healthy adults who completed an emotion processing and regulation task during two sessions of transcranial direct current stimulation (tDCS)—one sham and one active. Participants viewed static images (social and non-social content) under different regulation instructions (watch-neutral, watch-negative, reappraise-negative) while 32 active electrodes were recorded at 1000 Hz. The study investigates how targeted neuromodulation of the dorsolateral prefrontal cortex (with bilateral montage options targeting left or right dlPFC) modulates affective response evaluation, with particular relevance to understanding emotional processing in lonely individuals.",
-  "methods_description": "EEG was acquired using a 64-channel QuickCap with 32 active electrodes sampled at 1000 Hz via a Neuroscan SynampsRT amplifier. tDCS was delivered using a Starstim 8 system with either left or right dlPFC montages (anode at F3 or F4, with distributed returns). Active stimulation consisted of 2 mA for 20 minutes with 30-second ramp-up; sham stimulation included only ramp-up periods. Participants completed 120 trials per session in a 2×3 factorial design (content: social/non-social; regulation: watch-neutral/watch-negative/reappraise-negative), rating arousal and valence after each image. EEG preprocessing included band-pass filtering (0.1–30 Hz), downsampling to 250 Hz, re-referencing to average mastoids, ICA decomposition with automatic artifact rejection (ADJUST, SASICA), and epoching from −200 to 5000 ms relative to stimulus onset.",
   "keywords": [
     {
       "term": "EEG"
@@ -72,14 +28,68 @@
       "term": "dorsolateral prefrontal cortex"
     },
     {
-      "term": "event-related potentials"
-    },
-    {
       "term": "affective processing"
     },
     {
+      "term": "neuromodulation"
+    },
+    {
       "term": "loneliness"
+    },
+    {
+      "term": "emotion processing"
+    },
+    {
+      "term": "sham-controlled"
+    },
+    {
+      "term": "social cognition"
     }
   ],
-  "source_hash": "526434080147cf1ee772c59de732c85896ff2bcc40d81ca6558c2a3e3021997e"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on006861",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on006861",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds006861",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds006861.v1.0.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "National Science Centre, Poland",
+      "award_number": "2019/35/B/HS6/00517"
+    }
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "sizes": [
+    "57.5 GB (482 files)"
+  ],
+  "formats": [
+    ".csv",
+    ".erp",
+    ".json",
+    ".m",
+    ".md",
+    ".set",
+    ".tsv",
+    ".yml"
+  ],
+  "source_hash": "19ec7937c3e96991e39cb89f92960a630df923b29925de291201db5fb2e7de37"
 }
