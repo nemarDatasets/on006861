@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Targeted Neuromodulation of the Left Dorsolateral Prefrontal Cortex Alleviates Altered Affective Response Evaluation in Lonely Individuals\n",
-  "description": "This dataset comprises EEG recordings and behavioral data from 120 right-handed adults who completed an emotion processing and regulation task during two counterbalanced sessions of transcranial direct current stimulation (tDCS)—one sham and one active. Participants viewed static images (social and non-social content) under different regulation instructions (watch-neutral, watch-negative, reappraise-negative) while 32-channel EEG was recorded at 1000 Hz using a 64-channel QuickCap with 32 active electrodes. The study investigates how targeted neuromodulation of the dorsolateral prefrontal cortex modulates affective response evaluation, with particular relevance to understanding emotion regulation mechanisms in lonely individuals. This is a NEMAR-processed version of the OpenNeuro dataset (ds006861).",
-  "methods_description": "EEG was acquired using a 64-channel QuickCap with 32 active electrodes sampled at 1000 Hz via a Neuroscan SynampsRT amplifier. tDCS was delivered using a Starstim 8 system with either left or right dlPFC montages (anode at F3 or F4, return electrodes at FP1/FP2, FZ, FC1/FC2, FC5/FC6). Active stimulation consisted of 2 mA for 20 minutes with 30-second ramp-up; sham stimulation included only ramp-up periods. Participants completed 120 trials per session in a 2×3 factorial design, viewing images for 5 seconds and rating arousal and valence on 9-point scales. EEG preprocessing included 0.1–30 Hz band-pass filtering, downsampling to 250 Hz, average mastoid re-referencing, ICA decomposition with automatic IC rejection (ADJUST and SASICA), and artifact rejection using absolute amplitude and FASTER criteria.",
+  "description": "This dataset comprises EEG recordings and behavioral data from 120 neurologically healthy adults who completed an emotion processing and regulation task during transcranial direct current stimulation (tDCS). Participants underwent two counterbalanced sessions (sham and active stimulation) while viewing static emotional images and performing either passive viewing or cognitive reappraisal. Stimulation was targeted to the dorsolateral prefrontal cortex using two between-subject alternative montages: left dlPFC (anode at F3) or right dlPFC (anode at F4). The study investigates how targeted neuromodulation of the dlPFC modulates affective response evaluation in individuals experiencing loneliness. This is a BIDS-formatted dataset derived from OpenNeuro (ds006861).",
+  "methods_description": "EEG was recorded from 32 active electrodes using a QuickCap and Neuroscan SynampsRT amplifier at 1000 Hz sampling rate with impedance maintained below 10 kΩ. tDCS was delivered via Starstim 8 system with anodal electrode at either F3 (left dlPFC) or F4 (right dlPFC) in a between-subjects design, with return electrodes at FP1/FP2, FZ, FC1/FC2, FC5/FC6 respectively (8 cm² anodal, π cm² return electrode areas). Active stimulation consisted of 2 mA for 20 minutes with 30-second ramp-up; sham sessions included only ramp-up periods. EEG preprocessing included 0.1–30 Hz band-pass filtering, downsampling to 250 Hz, re-referencing to average mastoids, ICA decomposition with automatic IC rejection (ADJUST and SASICA), and artifact rejection using absolute amplitude and FASTER epoch properties criteria.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -25,7 +25,19 @@
       "term": "emotion regulation"
     },
     {
+      "term": "emotion processing"
+    },
+    {
+      "term": "cognitive reappraisal"
+    },
+    {
       "term": "dorsolateral prefrontal cortex"
+    },
+    {
+      "term": "event-related potentials"
+    },
+    {
+      "term": "loneliness"
     },
     {
       "term": "affective processing"
@@ -34,16 +46,10 @@
       "term": "neuromodulation"
     },
     {
-      "term": "loneliness"
-    },
-    {
-      "term": "emotion processing"
-    },
-    {
       "term": "sham-controlled"
     },
     {
-      "term": "social cognition"
+      "term": "affective neuroscience"
     }
   ],
   "related_identifiers": [
